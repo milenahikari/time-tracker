@@ -31,6 +31,17 @@
       "eas": {
         "projectId": "02bff637-5ace-417c-a60e-e9b94f2a0d20"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/@expo-google-fonts/rubik/Rubik_400Regular.ttf",
+            "node_modules/@expo-google-fonts/rubik/Rubik_500Medium.ttf"
+          ]
+        }
+      ]
+    ]
   }
 }
