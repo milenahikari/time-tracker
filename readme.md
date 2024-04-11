@@ -4,6 +4,8 @@
 ## Tecnologias utilizadas
 - Expo Bare Workflow (SDK 50)
 - Development builds
+- NativeWind
+- Expo Router
 
 ## Instalando App Profiz
 Para clonar o projeto, siga estas etapas:
