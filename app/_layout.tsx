@@ -2,8 +2,12 @@ import { Stack } from 'expo-router/stack';
 
 export default function AppLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    <Stack screenOptions={{
+      contentStyle: {
+        backgroundColor: '#070417'
+      }
+    }}>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }}/>
     </Stack>
   );
 }

@@ -6,6 +6,7 @@ import { TabBarButton } from '~/src/components/TabBarButton';
 export default function TabLayout() {
   return (
     <Tabs screenOptions={{
+      headerShown: false,
       tabBarStyle: {
         backgroundColor: '#070417',
         minHeight: 100,

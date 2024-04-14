@@ -2,7 +2,7 @@
 
 module.exports = {
   content: [
-    './App.tsx', './src/**/*.{js,jsx,ts,tsx}'
+    './App.tsx', './app/**/*.{ts,tsx}'
   ],
   theme: {
     extend: {
@@ -27,7 +27,6 @@ module.exports = {
           950: '#000000',
         },
         blue: {
-          500: '#3D4ABA',
           950: '#070417',
         },
         purple: {

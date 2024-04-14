@@ -1,9 +1,11 @@
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
 
-export default function Tab() {
+import GlobalContainer from '~/src/components/GlobalContainer';
+
+export default function Index() {
   return (
-    <View style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}>
-      <Text>Tab [Home|Settings]</Text>
-    </View>
+    <GlobalContainer>
+      <Text className='font-rubikMedium text-lg color-gray-50'>Task</Text>
+    </GlobalContainer>
   );
 }
