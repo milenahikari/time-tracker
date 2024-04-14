@@ -1,22 +1,37 @@
 import React from 'react';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
+
+import { TabBarButton } from '~/src/components/TabBarButton';
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+    <Tabs screenOptions={{
+      tabBarStyle: {
+        backgroundColor: '#070417',
+        minHeight: 100,
+        paddingTop: 20,
+        borderRadius: 30
+      }
+    }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+          title: '',
+          tabBarIcon: ({ focused }) => <TabBarButton tab="index" isFocused={focused}/>,
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="addNewTimer"
         options={{
-          title: 'Settings',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
+          title: '',
+          tabBarIcon: ({ focused }) => <TabBarButton tab="addNewTimer" isFocused={focused}/>,
+        }}
+      />
+      <Tabs.Screen
+        name="myProductivity"
+        options={{
+          title: '',
+          tabBarIcon: ({ focused }) => <TabBarButton tab="myProductivity" isFocused={focused}/>,
         }}
       />
     </Tabs>
